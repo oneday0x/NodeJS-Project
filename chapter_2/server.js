@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const PORT = 8383
 
-let data = ['james']
+let data = ['james', 'ahmed']
 
 //Middleware
 app.use(express.json())
@@ -41,7 +41,7 @@ app.get('/dashboard', (req, res) => {
 //CRUD = CREATE-post,  READ-get,  UPDATE-put,  DELETE-delete
 app.get('/api/data', (req, res) => {
     console.log('This one is fro data ')
-    res.send(data)
+    res.status(595).send(data)
 })
 
 
